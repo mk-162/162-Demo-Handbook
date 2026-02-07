@@ -1,6 +1,78 @@
-/* Minimal overrides — stock Material for MkDocs theme */
+/* ============================================
+   162 palette on Material for MkDocs (slate)
+   Background #0A0A0B · Orange #F97316 · Inter
+   ============================================ */
 
-/* Home page card grid */
+/* --- Primary & accent tokens --- */
+:root > * {
+  --md-primary-fg-color:         #0A0A0B;
+  --md-primary-fg-color--light:  #141415;
+  --md-primary-fg-color--dark:   #000000;
+  --md-accent-fg-color:          #F97316;
+  --md-accent-fg-color--transparent: rgba(249, 115, 22, 0.12);
+}
+
+/* --- Push slate scheme to near-black --- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:          #0A0A0B;
+  --md-default-bg-color--light:   #141415;
+  --md-default-fg-color:          #EAEAEA;
+  --md-default-fg-color--light:   #999999;
+  --md-default-fg-color--lighter: #666666;
+  --md-default-fg-color--lightest:#262626;
+  --md-code-bg-color:             #141415;
+  --md-code-fg-color:             #FB923C;
+  --md-typeset-a-color:           #F97316;
+}
+
+/* --- Header & tabs --- */
+.md-header {
+  background-color: #0A0A0B;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.md-tabs {
+  background-color: #0A0A0B;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #F97316 !important;
+}
+
+/* --- Sidebar --- */
+.md-sidebar {
+  background-color: #0A0A0B;
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: #F97316 !important;
+}
+
+/* --- Footer --- */
+.md-footer {
+  background-color: #0A0A0B;
+  border-top: 1px solid #1a1a1a;
+}
+
+.md-footer-meta {
+  background-color: #0A0A0B;
+}
+
+/* --- Buttons --- */
+.md-typeset .md-button--primary {
+  background-color: #F97316;
+  border-color: #F97316;
+  color: #fff;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: #EA580C;
+  border-color: #EA580C;
+}
+
+/* --- Home page card grid --- */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -11,24 +83,26 @@
 .grid-cards a {
   display: block;
   padding: 1rem 1.25rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.25rem;
+  background: #141415;
+  border: 1px solid #262626;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .grid-cards a:hover {
-  border-color: var(--md-accent-fg-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.08);
 }
 
 .grid-cards a h3 {
   margin: 0 0 0.25rem 0;
   font-size: 0.9rem;
+  color: #EAEAEA;
 }
 
 .grid-cards a p {
   margin: 0;
   font-size: 0.8rem;
-  color: var(--md-default-fg-color--light);
+  color: #999999;
 }
