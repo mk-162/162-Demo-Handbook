@@ -67,15 +67,16 @@ jobs:
 
       - name: Encrypt site with StatiCrypt
         run: |
-          npx staticrypt site/**/*.html -r --short \
+          cd site
+          npx staticrypt **/*.html -r --short \
             -p "${{ secrets.STATICRYPT_PASSWORD }}" \
-            -t "staticrypt-template.html" \
+            -t "../staticrypt-template.html" \
             --template-title "162 Demo Handbook" \
             --template-instructions "Enter the password to access the handbook." \
             --template-color-primary "#F97316" \
             --template-color-secondary "#0A0A0B" \
             --template-button "UNLOCK" \
-            -d site \
+            -d . \
             --remember 30
 
       - name: Upload artifact
