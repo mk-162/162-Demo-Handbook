@@ -1,91 +1,57 @@
----
-title: Home
-hide:
-  - navigation
-  - toc
----
+# Welcome to 162
 
-# 162 Demo Handbook
+This is the **Operational Knowledge Base** for our consultancy.
 
-A demo Corporate Brain — skills, playbooks, templates, and knowledge in one place.
+It is designed to be read by:
 
-[Browse Skills](skills/){ .md-button .md-button--primary }
-[View Playbooks](playbooks/){ .md-button }
+- **Humans** — for learning and reference
+- **AI Agents** — for execution of complex business workflows
 
----
+## Getting Started
 
-## What is this?
+1. **Clone this repo**
+2. **Copy `.env.example` to `.env`** and fill in your keys
+3. **Connect your Agent:** Point Claude Desktop to our MCP server URL
 
-This is a **demo Corporate Brain** — the central knowledge base that powers AI agents. It brings together everything a team and its AI agents need to operate:
+## The 162 Architecture
 
-- **Strategic Planning** — High-level goals, market positioning, and growth plans.
-- **Tactical Guides** — Step-by-step manuals for SEO, PPC, Amazon, Sales, and more.
-- **Agent Skills** — Executable instructions that AI agents can read and run.
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     THE BODY (Website)                      │
+│              Consumer-facing Next.js Application            │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     THE ENGINE (MCP Server)                 │
+│         Secure bridge between GitHub and AI Agents          │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     THE BRAIN (Handbook)                    │
+│         Structured Knowledge Base for AI Execution          │
+├─────────────────────────────────────────────────────────────┤
+│  00-onboarding/  →  Getting started guides for humans       │
+│  01-context/     →  Immutable facts (company, brand, etc.)  │
+│  02-workflows/   →  Executable skills (runbooks)            │
+│  03-knowledge/   →  Deep strategy documents                 │
+│  04-connections/ →  Technical specifications                │
+│  templates/      →  Reusable assets                         │
+└─────────────────────────────────────────────────────────────┘
+```
 
----
+## Philosophy: "Boring Technology"
 
-## Browse by Category
+We reject fragile prompt engineering in favor of durable, version-controlled documentation.
 
-<div class="grid-cards" markdown>
+- **Markdown** over proprietary formats
+- **Git** over cloud-only storage
+- **Structured context** over repeated prompting
 
-<a href="strategy/">
-<h3>Strategy</h3>
-<p>Market research, positioning, and growth plans.</p>
-</a>
+## Quick Links
 
-<a href="branding/">
-<h3>Branding</h3>
-<p>Tone of voice, visual identity, and messaging.</p>
-</a>
-
-<a href="seo/">
-<h3>SEO</h3>
-<p>Search optimisation audits and implementation.</p>
-</a>
-
-<a href="ppc/">
-<h3>PPC</h3>
-<p>Paid advertising strategies and campaigns.</p>
-</a>
-
-<a href="content/">
-<h3>Content</h3>
-<p>Pillar strategy, video, and newsletters.</p>
-</a>
-
-<a href="sales/">
-<h3>Sales</h3>
-<p>Lead qualification, B2B outreach, and trade pricing.</p>
-</a>
-
-<a href="amazon/">
-<h3>Amazon</h3>
-<p>Marketplace optimisation and B2B growth.</p>
-</a>
-
-<a href="website/">
-<h3>Website</h3>
-<p>BigCommerce, merchandising, and CRO.</p>
-</a>
-
-<a href="skills/">
-<h3>Skills Library</h3>
-<p>25+ executable AI agent capabilities.</p>
-</a>
-
-<a href="playbooks/">
-<h3>Playbooks</h3>
-<p>Step-by-step guides for recurring tasks.</p>
-</a>
-
-<a href="operations/">
-<h3>Operations</h3>
-<p>Forecasting, returns, and logistics.</p>
-</a>
-
-<a href="customer-service/">
-<h3>Customer Service</h3>
-<p>Scripts and complaint handling.</p>
-</a>
-
-</div>
+- [Company Profile](01-context/company.md)
+- [Brand Voice](01-context/brand.md)
+- [System Architecture](01-context/system-architecture.md)
+- [Available Workflows](02-workflows/)

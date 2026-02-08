@@ -1,7 +1,6 @@
-site_name: 162 Demo Handbook
-site_description: A demo Corporate Brain — the central knowledge base, skills library, and playbook hub.
+site_name: 162 Handbook
+site_description: The 162 Operational Knowledge Base — structured context for humans and AI agents.
 site_url: https://mk-162.github.io/162-Demo-Handbook/
-
 
 theme:
   name: material
@@ -16,10 +15,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.indexes
     - navigation.top
     - navigation.path
-    - navigation.instant
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -62,135 +59,57 @@ extra:
 nav:
   - Home: index.md
 
-  - Strategy:
-    - strategy/index.md
-    - Executive Summary: strategy/executive-summary.md
-    - Market Research: strategy/market-research.md
-    - Branding:
-      - branding/index.md
-      - Identity: branding/identity.md
-      - Messaging: branding/messaging.md
+  - Onboarding:
+    - 00-onboarding/README.md
+    - Setup Guide: 00-onboarding/setup-guide.md
+    - Keys Setup: 00-onboarding/keys-setup.md
+    - How to Use the Agent: 00-onboarding/how-to-use-the-agent.md
+    - Skill Library: 00-onboarding/skill-library.md
+    - Hosting Options: 00-onboarding/hosting-options.md
+    - Troubleshooting: 00-onboarding/troubleshooting.md
 
-  - Marketing:
-    - SEO:
-      - seo/index.md
-      - On-Page SEO: seo/on-page.md
-      - Technical Audit: seo/technical-audit.md
-    - PPC:
-      - ppc/index.md
-      - Campaign Structure: ppc/campaign-structure.md
-    - Content:
-      - content/index.md
-      - Pillar Strategy: content/pillar-strategy.md
-      - Email & Newsletters: content/email-newsletters.md
-      - Video Production: content/video-production.md
-    - Social Media: social-media/index.md
+  - Context:
+    - Company: 01-context/company.md
+    - Brand: 01-context/brand.md
+    - Services: 01-context/services.md
+    - Clients: 01-context/clients.md
+    - System Architecture: 01-context/system-architecture.md
 
-  - Sales & Commerce:
-    - Sales:
-      - sales/index.md
-      - Lead Qualification: sales/lead-qualification.md
-      - ABM Strategy: sales/abm-strategy.md
-      - Cold Email: sales/cold-email.md
-      - LinkedIn Playbook: sales/linkedin-playbook.md
-      - Trade Pricing: sales/trade-pricing.md
-    - Amazon:
-      - amazon/index.md
-      - Listing Optimization: amazon/listing-optimization.md
-      - Brand Protection: amazon/brand-protection.md
-      - DSP Strategy: amazon/dsp-strategy.md
-    - Website:
-      - website/index.md
-      - Merchandising Rules: website/merchandising-rules.md
-      - A/B Testing: website/ab-testing.md
-      - CRO Checklist: website/cro-checklist.md
+  - Workflows:
+    - Blog Post:
+      - Runbook: 02-workflows/blog-post/RUNBOOK.md
+      - Prompt: 02-workflows/blog-post/prompt.md
+    - Social Media:
+      - Runbook: 02-workflows/social-media/RUNBOOK.md
+      - Prompt: 02-workflows/social-media/prompt.md
+    - Website Edit:
+      - Runbook: 02-workflows/website-edit/RUNBOOK.md
+      - Prompt: 02-workflows/website-edit/prompt.md
+    - Install Skill:
+      - Runbook: 02-workflows/install-skill/RUNBOOK.md
+      - Prompt: 02-workflows/install-skill/prompt.md
+    - Update Handbook:
+      - Runbook: 02-workflows/update-handbook/RUNBOOK.md
+      - Prompt: 02-workflows/update-handbook/prompt.md
+    - Update Skill:
+      - Runbook: 02-workflows/update-skill/RUNBOOK.md
+      - Prompt: 02-workflows/update-skill/prompt.md
+    - Create Workflow:
+      - Runbook: 02-workflows/_create-workflow/RUNBOOK.md
+      - Prompt: 02-workflows/_create-workflow/prompt.md
 
-  - Operations:
-    - operations/index.md
-    - Forecasting: operations/forecasting.md
-    - Returns & RMA: operations/returns-rma.md
-    - Customer Service:
-      - customer-service/index.md
-      - Scripts: customer-service/scripts.md
-    - Process: process/index.md
-
-  - Skills:
-    - skills/index.md
-    - SEO:
-      - SEO Audit: skills/seo-audit/SKILL.md
-      - Create Page: skills/create-page/SKILL.md
-    - Content:
-      - Draft Blog: skills/draft-blog/SKILL.md
-      - Product Photography: skills/content/product-photography/SKILL.md
+  - Knowledge:
+    - Consultancy:
+      - Pricing: 03-knowledge/consultancy/pricing.md
+      - Security: 03-knowledge/consultancy/security.md
     - Marketing:
-      - skills/marketing/index.md
-      - Content Strategy: skills/marketing/content-strategy/SKILL.md
-      - Email Automation: skills/marketing/email-automation/SKILL.md
-      - Social Content: skills/marketing/social-content/SKILL.md
-    - Ecommerce:
-      - skills/ecommerce/index.md
-      - Competitor Analyzer: skills/ecommerce/competitor-analyzer/SKILL.md
-      - Pricing Strategy: skills/ecommerce/pricing-strategy/SKILL.md
-      - SEO Audit: skills/ecommerce/seo-audit/SKILL.md
-    - Amazon:
-      - skills/amazon/index.md
-      - Competitor Monitor: skills/amazon/competitor-monitor/SKILL.md
-      - Listing Audit: skills/amazon/listing-audit/SKILL.md
-      - PPC Optimizer: skills/amazon/ppc-optimizer/SKILL.md
-      - Product Launch: skills/amazon/product-launch/SKILL.md
-      - Review Response: skills/amazon/review-response/SKILL.md
-    - B2B:
-      - skills/b2b/index.md
-      - Cold Outreach: skills/b2b/cold-outreach/SKILL.md
-      - Outreach Sequencer: skills/b2b/outreach-sequencer/SKILL.md
-      - Account Penetration: skills/b2b/account-penetration/SKILL.md
-    - Operations:
-      - Demand Forecasting: skills/operations/demand-forecasting/SKILL.md
-    - Research:
-      - Competitor Research: skills/competitor-research/SKILL.md
-      - A/B Test Setup: skills/ab-test-setup/SKILL.md
-    - Customer Service:
-      - Handle Complaint: skills/handle-complaint/SKILL.md
-      - Generate Leads: skills/generate-leads/SKILL.md
-    - Meta:
-      - skills/meta/index.md
-      - Create Playbook: skills/meta/create-playbook/SKILL.md
-      - Find Knowledge: skills/meta/find-knowledge/SKILL.md
-      - Suggest Improvements: skills/meta/suggest-improvements/SKILL.md
-      - Update KB: skills/meta/update-kb/SKILL.md
+      - Content Calendar: 03-knowledge/marketing/content-cal.md
+      - Strategy: 03-knowledge/marketing/strategy.md
 
-  - Playbooks:
-    - playbooks/index.md
-    - Product Launch: playbooks/product-launch.md
-    - Amazon Listing Launch: playbooks/amazon-listing-launch.md
-    - Amazon Listing Refresh: playbooks/amazon-listing-refresh.md
-    - B2B Account Acquisition: playbooks/b2b-account-acquisition.md
-    - B2B Outreach Campaign: playbooks/b2b-outreach-campaign.md
-    - Bulk Pricing Request: playbooks/bulk-pricing-request.md
-    - Competitor Deep Dive: playbooks/competitor-deep-dive.md
-    - Content Calendar: playbooks/content-calendar.md
-    - Customer Onboarding: playbooks/customer-onboarding.md
-    - Weekly Ops Rhythm: playbooks/weekly-ops-rhythm.md
-    - Weekly Reporting: playbooks/weekly-reporting.md
+  - Connections:
+    - GitHub API: 04-connections/github-api.md
+    - Keys: 04-connections/keys.md
+    - Vercel: 04-connections/vercel.md
 
-  - Reference:
-    - Onboarding:
-      - onboarding/index.md
-      - Environment Setup: onboarding/environment-setup.md
-      - Agent Config: onboarding/agent-config.md
-    - MCPs & Tools:
-      - mcps/index.md
-      - BigCommerce: mcps/bigcommerce.md
-      - Google Search Console: mcps/google-search-console.md
-      - Amazon Seller Central: mcps/amazon-seller-central.md
-    - Tools: tools/index.md
-    - Templates:
-      - document-templates/index.md
-      - Product Description: document-templates/product-description.md
-      - Amazon Listing: document-templates/amazon-listing.md
-      - Cold Outreach Email: document-templates/cold-outreach-email.md
-      - Email Welcome Sequence: document-templates/email-welcome-sequence.md
-      - Competitor Report: document-templates/competitor-report.md
-      - Proposal: document-templates/proposal-template.md
-      - Weekly Report: document-templates/weekly-report.md
-    - Contact: contact/index.md
+  - Meta:
+    - Change Log: 99-meta/change-log.md

@@ -71,3 +71,38 @@
   background-color: #EA580C;
   border-color: #EA580C;
 }
+
+/* --- Home page card grid --- */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.grid-cards a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: #141415;
+  border: 1px solid #262626;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.grid-cards a:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.08);
+}
+
+.grid-cards a h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  color: #EAEAEA;
+}
+
+.grid-cards a p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #999999;
+}
